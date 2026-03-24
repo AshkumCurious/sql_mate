@@ -1,0 +1,10 @@
+[
+  "q001_select_all.json",
+  "q002_where_filter.json",
+  "q003_order_by.json",
+  "q004_aggregate_count.json",
+  "q005_inner_join.json",
+  "q006_group_by_having.json",
+  "q007_left_join.json",
+  "q008_subquery.json"
+]

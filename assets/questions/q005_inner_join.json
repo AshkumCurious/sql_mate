@@ -1,0 +1,50 @@
+{
+  "id": "q005",
+  "title": "Employee Orders",
+  "description": "Find each employee's name along with the product they ordered. Return employee name and product name only.",
+  "category": "JOIN",
+  "difficulty": "medium",
+  "schema": [
+    {
+      "table_name": "employees",
+      "columns": [
+        { "name": "id",   "type": "INTEGER", "primary": true },
+        { "name": "name", "type": "TEXT",    "not_null": true }
+      ]
+    },
+    {
+      "table_name": "orders",
+      "columns": [
+        { "name": "id",          "type": "INTEGER", "primary": true },
+        { "name": "employee_id", "type": "INTEGER" },
+        { "name": "product",     "type": "TEXT" }
+      ]
+    }
+  ],
+  "seed_data": [
+    {
+      "table": "employees",
+      "rows": [
+        { "id": 1, "name": "Alice" },
+        { "id": 2, "name": "Bob" },
+        { "id": 3, "name": "Carol" }
+      ]
+    },
+    {
+      "table": "orders",
+      "rows": [
+        { "id": 101, "employee_id": 1, "product": "Laptop" },
+        { "id": 102, "employee_id": 1, "product": "Mouse" },
+        { "id": 103, "employee_id": 2, "product": "Keyboard" },
+        { "id": 104, "employee_id": 3, "product": "Monitor" }
+      ]
+    }
+  ],
+  "reference_query": "SELECT employees.name, orders.product FROM employees INNER JOIN orders ON employees.id = orders.employee_id",
+  "hints": [
+    "Use JOIN (or INNER JOIN) to combine two tables.",
+    "The ON clause specifies which columns to match — employees.id = orders.employee_id.",
+    "You can use table aliases: FROM employees e JOIN orders o ON e.id = o.employee_id"
+  ],
+  "explanation": "INNER JOIN returns only rows where the join condition matches in BOTH tables. Rows without a match are excluded."
+}

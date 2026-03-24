@@ -1,0 +1,36 @@
+{
+  "id": "q001",
+  "title": "Select All Employees",
+  "description": "Retrieve all columns and all rows from the employees table.",
+  "category": "SELECT",
+  "difficulty": "easy",
+  "schema": [
+    {
+      "table_name": "employees",
+      "columns": [
+        { "name": "id",         "type": "INTEGER", "primary": true },
+        { "name": "name",       "type": "TEXT",    "not_null": true },
+        { "name": "department", "type": "TEXT" },
+        { "name": "salary",     "type": "REAL" }
+      ]
+    }
+  ],
+  "seed_data": [
+    {
+      "table": "employees",
+      "rows": [
+        { "id": 1, "name": "Alice",   "department": "Engineering", "salary": 95000 },
+        { "id": 2, "name": "Bob",     "department": "Marketing",   "salary": 72000 },
+        { "id": 3, "name": "Carol",   "department": "Engineering", "salary": 105000 },
+        { "id": 4, "name": "David",   "department": "HR",          "salary": 68000 },
+        { "id": 5, "name": "Eva",     "department": "Marketing",   "salary": 80000 }
+      ]
+    }
+  ],
+  "reference_query": "SELECT * FROM employees",
+  "hints": [
+    "Use SELECT * to retrieve all columns.",
+    "The table name is 'employees'."
+  ],
+  "explanation": "SELECT * FROM table_name retrieves every column and every row. It's the simplest query form."
+}

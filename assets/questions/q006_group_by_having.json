@@ -1,0 +1,37 @@
+{
+  "id": "q006",
+  "title": "Departments with High Average Salary",
+  "description": "Find departments where the average salary is greater than 80000. Return the department name and the average salary as 'avg_salary', ordered by avg_salary descending.",
+  "category": "Aggregates",
+  "difficulty": "medium",
+  "schema": [
+    {
+      "table_name": "employees",
+      "columns": [
+        { "name": "id",         "type": "INTEGER", "primary": true },
+        { "name": "name",       "type": "TEXT",    "not_null": true },
+        { "name": "department", "type": "TEXT" },
+        { "name": "salary",     "type": "REAL" }
+      ]
+    }
+  ],
+  "seed_data": [
+    {
+      "table": "employees",
+      "rows": [
+        { "id": 1, "name": "Alice",   "department": "Engineering", "salary": 95000 },
+        { "id": 2, "name": "Bob",     "department": "Marketing",   "salary": 72000 },
+        { "id": 3, "name": "Carol",   "department": "Engineering", "salary": 105000 },
+        { "id": 4, "name": "David",   "department": "HR",          "salary": 68000 },
+        { "id": 5, "name": "Eva",     "department": "Marketing",   "salary": 80000 }
+      ]
+    }
+  ],
+  "reference_query": "SELECT department, AVG(salary) AS avg_salary FROM employees GROUP BY department HAVING AVG(salary) > 80000 ORDER BY avg_salary DESC",
+  "hints": [
+    "Use GROUP BY department and AVG(salary) to get average salary per department.",
+    "Use HAVING (not WHERE) to filter groups after aggregation.",
+    "HAVING AVG(salary) > 80000 filters out departments below the threshold."
+  ],
+  "explanation": "HAVING filters groups after GROUP BY is applied. Use WHERE to filter individual rows before grouping, and HAVING to filter aggregated groups."
+}

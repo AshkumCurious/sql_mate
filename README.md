@@ -1,18 +1,21 @@
-# SQL Mate
+<p align="center"> <img width="300" height="715" alt="sql_mate_logo" src="https://github.com/user-attachments/assets/b86f7f19-72ef-41bf-afb8-6402930f21d8" /> </p>
+
+#SQL Mate
 
 > Your mate who never drops the table.
 
 A Flutter app for practising SQL queries with **offline, result-based validation** and an **AI-powered SQL assistant**. Built with MVVM + Riverpod.
 
-<img width="1080" height="1920" alt="img_1774704999" src="https://github.com/user-attachments/assets/2941e6c4-b9d7-43cd-9fdb-f54040eaba7b" />
-<img width="1080" height="1920" alt="img_1774704978" src="https://github.com/user-attachments/assets/a5568e03-dabd-4ae9-93a0-1c5a3400bb8f" />
-<img width="1080" height="1920" alt="img_1774704831" src="https://github.com/user-attachments/assets/21049fd9-1816-494a-852a-7de67d104ba6" />
-<img width="1080" height="1920" alt="img_1774704821" src="https://github.com/user-attachments/assets/81facec3-adef-44fb-949d-53e6168a56d3" />
-<img width="1080" height="1920" alt="img_1774704817" src="https://github.com/user-attachments/assets/30ef2ca2-c354-414f-980e-3d0261138db3" />
-<img width="1080" height="1920" alt="img_1774704776" src="https://github.com/user-attachments/assets/d5518b5a-b6cb-4f75-a883-d0cc2efee4c3" />
-<img width="1080" height="1920" alt="img_1774704748" src="https://github.com/user-attachments/assets/760acb0f-20a5-409f-95d9-5750fc38299b" />
-<img width="1080" height="1920" alt="img_1774704613" src="https://github.com/user-attachments/assets/2c85a153-7fa8-4bae-a937-7874db32a7f1" />
-<img width="1080" height="1920" alt="img_1774704604" src="https://github.com/user-attachments/assets/40abe54a-42c7-494e-b0af-c190bf75b86e" />
+<p align="center">
+<img width="250" height="1920" alt="img_1774704999" src="https://github.com/user-attachments/assets/2941e6c4-b9d7-43cd-9fdb-f54040eaba7b" />
+<img width="250" height="1920" alt="img_1774704978" src="https://github.com/user-attachments/assets/a5568e03-dabd-4ae9-93a0-1c5a3400bb8f" />
+<img width="250" height="1920" alt="img_1774704831" src="https://github.com/user-attachments/assets/21049fd9-1816-494a-852a-7de67d104ba6" />
+<img width="250" height="1920" alt="img_1774704821" src="https://github.com/user-attachments/assets/81facec3-adef-44fb-949d-53e6168a56d3" />
+<img width="250" height="1920" alt="img_1774704817" src="https://github.com/user-attachments/assets/30ef2ca2-c354-414f-980e-3d0261138db3" />
+<img width="250" height="1920" alt="img_1774704776" src="https://github.com/user-attachments/assets/d5518b5a-b6cb-4f75-a883-d0cc2efee4c3" />
+<img width="250" height="1920" alt="img_1774704748" src="https://github.com/user-attachments/assets/760acb0f-20a5-409f-95d9-5750fc38299b" />
+<img width="250" height="1920" alt="img_1774704613" src="https://github.com/user-attachments/assets/2c85a153-7fa8-4bae-a937-7874db32a7f1" />
+<img width="250" height="1920" alt="img_1774704604" src="https://github.com/user-attachments/assets/40abe54a-42c7-494e-b0af-c190bf75b86e" /> </p>
 
 ---
 
